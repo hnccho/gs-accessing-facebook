@@ -26,7 +26,7 @@ public class HelloController {
         this.google = google;
 		this.connectionRepository = connectionRepository;
     }
-
+/*
     @RequestMapping(method=RequestMethod.GET)
     public String helloFacebook(Model model) {
         if (connectionRepository.findPrimaryConnection(Facebook.class) == null) {
@@ -38,7 +38,7 @@ public class HelloController {
         model.addAttribute("feed", feed);
         return "hello";
     }
-
+*/
     @RequestMapping(method=RequestMethod.GET)
     public String helloGoogle(Model model) {
         if (connectionRepository.findPrimaryConnection(Google.class) == null) {
